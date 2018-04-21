@@ -1,0 +1,54 @@
+Commands
+(1) Select a city
+
+<city>, <state - abbrev or full>
+Enter a city and a state, using a comma to separate values.
+
+
+(2) Visualize data from data base. It does not have to be the most recently selected city from Yelp, but it must have been
+entered into the data base at some point. Use a comma to separate values.
+
+map|<city>
+	Display the top 20 restaurants for a city that has been pulled from Yelp and entered into the data base
+
+	sample command: map, Topeka
+
+table 
+	table all key results of the data harnessing. the goal was to pull popular restaurants
+	from a city and compare that to adult obesity onset. Does a city's restaurant preference show
+	relationship to its residents health as compared to state and national averages, and also, other cities 
+	that a user is interested in? This table attempts to break it down by showing the city, top food, city, state,
+	and national rate.
+
+	sample command: table
+
+graph
+	produces a bar chart that shows the difference between the obesity rate
+	from cities selected by user that are in the 500 cities project compared to the
+	average of all cities , e.g., national average
+
+	sample command: graph
+
+graph|<city>|food/price/ratings/reviews
+	graphs a pie chart for the city based on how a user would like to review
+	common themes among the top restaurants 
+
+	food: top 5 food categories
+	price: most commonly cited price grouping 
+	ratings: most commonly cited restaurant rating
+	reviews: most commonly occuring groupings of review counts for restaurants 
+
+	sample command: graph, Denver, food
+	
+graph|<2 digit state abbrev>
+	state: two letter abbreviation for the state to review 
+
+	produces a dot chart of obesity rates for a chosen state overall and broken out by gender.
+	for comparison, also plots the 5 states that fall preceeding and proceeding to the selected state
+	in an alphabetical listing. 
+
+	sample command: graph, MI
+
+
+
+
